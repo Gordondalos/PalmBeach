@@ -1,1 +1,1 @@
-angular.module('navigation', []);
+var navigation = angular.module('navigation', [ ]);

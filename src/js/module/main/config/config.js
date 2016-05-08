@@ -1,2 +1,2 @@
 // Конфигурация главного модуля
-angular.module('main', ['navigation']);
+var main = angular.module('main', ['ngRoute','navigation','userInfo','record']);
