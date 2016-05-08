@@ -1,1 +1,35 @@
-<h1>Записи</h1>
+<div ng-controller="recordCtrl">
+	<h1>Записи</h1>
+
+	<div class="p-y-2" id="ex1" ng-show="displayForm">
+		<form class="form-inline">
+			<input class="form-control" name="color" ng-model="color" type="text">
+
+		</form>
+		<button ng-click="closeForm()" class="btn btn-primary display-inline-block">Применить цвет</button>
+	</div>
+
+	<div ng-repeat="list in models" class="col-md-6 multiDemo">
+		<ul class="dnd" dnd-list dnd-drop="onDrop(list, item, index)">
+			<li ng-repeat="item in list.items"
+			    ng-dblclick="showModal(item)"
+			    dnd-draggable="getSelectedItemsIncluding(list, item)"
+			    dnd-dragstart="onDragstart(list, event)"
+			    dnd-moved="onMoved(list)"
+			    dnd-dragend="list.dragging = false"
+			    dnd-selected="item.selected = !item.selected"
+			    ng-class="{'selected': item.selected}"
+			    ng-style="{'background-color': item.color}"
+			    ng-hide="list.dragging && item.selected"
+					>
+				{{item.label}}
+				<a ng-click="del(list.items, $index)">del</a>
+			</li>
+		</ul>
+	</div>
+	<div class="clearfix"></div>
+
+
+
+
+</div>
