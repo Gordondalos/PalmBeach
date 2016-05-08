@@ -6,6 +6,7 @@ var main = angular.module('main', [
     'userInfo',
     'record',
     'dndLists',
+    'ui.bootstrap.datetimepicker',
 ]);
 main.config(['$routeProvider', function($routeProvide){
 
@@ -52,6 +53,10 @@ record.controller('recordCtrl', ['$scope', function ($scope) {
         items.splice(index, 1);
     };
 
+    $scope.plus = function(items){
+        items.push(items.length+1);
+    };
+
   // форма для ввода цвета
     $scope.displayForm = false;
     $scope.selectedItem = {};
@@ -59,19 +64,32 @@ record.controller('recordCtrl', ['$scope', function ($scope) {
     $scope.closeForm = function () {
         $scope.displayForm = false;
         $scope.selectedItem.color = $scope.color;
+        $scope.selectedItem.name = $scope.name;
+        $scope.selectedItem.description = $scope.description;
+        $scope.selectedItem.dateTime = $scope.dateTime;
+
+
         $scope.color = "";
+        $scope.name = "";
+        $scope.dateTime = "";
+        $scope.description = "";
         $scope.selectedItem = {};
     }
 
     $scope.showModal = function () {
         $scope.displayForm = true;
         $scope.selectedItem = this.item;
+        $scope.name = this.item.name;
+        $scope.description = this.item.description;
+        $scope.dateTime = this.item.dateTime;
     };
 
     // Взять и бросить
     $scope.models = [
-        {listName: "A", items: [], dragging: false},
-        {listName: "B", items: [], dragging: false}
+        {listName: "Оля", items: [], dragging: false},
+        {listName: "Таня", items: [], dragging: false},
+        {listName: "Валя", items: [], dragging: false},
+        {listName: "Катя", items: [], dragging: false}
     ];
 
     /**
@@ -96,7 +114,7 @@ record.controller('recordCtrl', ['$scope', function ($scope) {
         list.dragging = true;
         if (event.dataTransfer.setDragImage) {
             var img = new Image();
-            img.src = 'framework/vendor/ic_content_copy_black_24dp_2x.png';
+            img.src = 'img/ic_content_copy_black_24dp_2x.png';
             event.dataTransfer.setDragImage(img, 0, 0);
         }
     };
@@ -128,8 +146,14 @@ record.controller('recordCtrl', ['$scope', function ($scope) {
 
     // Generate the initial model
     angular.forEach($scope.models, function (list) {
-        for (var i = 1; i <= 4; ++i) {
-            list.items.push({label: "Item " + list.listName + i, color: '#fff'});
+        for (var i = 1; i <= 3; ++i) {
+           // list.items.push({label: "Свободно " + list.listName + i, color: '#fff'});
+            list.items.push({
+                name: "",
+                description: "",
+                dateTime: "",
+
+            });
         }
     });
 

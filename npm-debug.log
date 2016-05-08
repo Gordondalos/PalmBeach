@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'moment.js',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.1
+4 verbose install initial load of C:\xampp\htdocs\PalmBeach\package.json
+5 warn package.json palmbeach@1.0.0 No description
+6 warn package.json palmbeach@1.0.0 No repository field.
+7 warn package.json palmbeach@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from C:\xampp\htdocs\PalmBeach\node_modules\angular-bootstrap-datetimepicker\package.json
+9 verbose installManyTop reading scoped package data from C:\xampp\htdocs\PalmBeach\node_modules\gulp\package.json
+10 verbose installManyTop reading scoped package data from C:\xampp\htdocs\PalmBeach\node_modules\gulp-rigger\package.json
+11 verbose installManyTop reading scoped package data from C:\xampp\htdocs\PalmBeach\node_modules\gulp-watch\package.json
+12 verbose readDependencies loading dependencies from C:\xampp\htdocs\PalmBeach\package.json
+13 silly cache add args [ 'moment.js', null ]
+14 verbose cache add spec moment.js
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: 'moment.js',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'moment.js',
+15 silly cache add   rawSpec: '',
+15 silly cache add   spec: 'latest',
+15 silly cache add   type: 'tag' }
+16 silly addNamed moment.js@latest
+17 verbose addNamed "latest" is being treated as a dist-tag for moment.js
+18 info addNameTag [ 'moment.js', 'latest' ]
+19 silly mapToRegistry name moment.js
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/moment.js
+23 verbose addNameTag registry:https://registry.npmjs.org/moment.js not in flight; fetching
+24 verbose request uri https://registry.npmjs.org/moment.js
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 22:40:11
+27 verbose request id 1bd2fe2930213a27
+28 http request GET https://registry.npmjs.org/moment.js
+29 http 404 https://registry.npmjs.org/moment.js
+30 verbose headers { 'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '2',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   date: 'Sun, 08 May 2016 16:40:10 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   connection: 'keep-alive',
+30 verbose headers   'x-served-by': 'cache-ams4123-AMS',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1462725610.246196,VS0,VE175',
+30 verbose headers   vary: 'Accept-Encoding' }
+31 silly get cb [ 404,
+31 silly get   { 'content-type': 'application/json',
+31 silly get     'cache-control': 'max-age=0',
+31 silly get     'content-length': '2',
+31 silly get     'accept-ranges': 'bytes',
+31 silly get     date: 'Sun, 08 May 2016 16:40:10 GMT',
+31 silly get     via: '1.1 varnish',
+31 silly get     age: '0',
+31 silly get     connection: 'keep-alive',
+31 silly get     'x-served-by': 'cache-ams4123-AMS',
+31 silly get     'x-cache': 'MISS',
+31 silly get     'x-cache-hits': '0',
+31 silly get     'x-timer': 'S1462725610.246196,VS0,VE175',
+31 silly get     vary: 'Accept-Encoding' } ]
+32 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/moment.js
+32 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+32 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+32 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+32 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+32 verbose stack     at emitTwo (events.js:87:13)
+32 verbose stack     at Request.emit (events.js:172:7)
+32 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1082:10)
+32 verbose stack     at emitOne (events.js:82:20)
+32 verbose stack     at Request.emit (events.js:169:7)
+32 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+33 verbose statusCode 404
+34 verbose pkgid moment.js
+35 verbose cwd C:\xampp\htdocs\PalmBeach
+36 error Windows_NT 6.1.7601
+37 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "moment.js" "--save-dev"
+38 error node v4.3.1
+39 error npm  v2.14.12
+40 error code E404
+41 error 404 Registry returned 404 for GET on https://registry.npmjs.org/moment.js
+41 error 404
+41 error 404 'moment.js' is not in the npm registry.
+41 error 404 You should bug the author to publish it (or use the name yourself!)
+41 error 404 It was specified as a dependency of 'palmbeach'
+41 error 404
+41 error 404 Note that you can also install from a
+41 error 404 tarball, folder, http url, or git url.
+42 verbose exit [ 1, true ]

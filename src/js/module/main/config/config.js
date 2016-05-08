@@ -5,4 +5,5 @@ var main = angular.module('main', [
     'userInfo',
     'record',
     'dndLists',
+    'ui.bootstrap.datetimepicker',
 ]);
