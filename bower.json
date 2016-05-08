@@ -1,0 +1,26 @@
+{
+  "name": "PalmBeach",
+  "authors": [
+    "Gordondalos <Gordondalos@gmail.com>"
+  ],
+  "description": "This is frontend parts aplication, for control and manage user records in spa salon",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "v4.0.0-alpha.2",
+    "strict-reset.css": "^0.5.2",
+    "angular-route": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-animate": "1.5.x",
+    "angular": "1.5.x",
+    "angular-drag-and-drop-lists": "^1.4.0"
+  }
+}
