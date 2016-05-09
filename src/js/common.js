@@ -1,6 +1,7 @@
 /* Главный модуль*/
 //= module/main/config/config.js
 //= module/main/router/router.js
+//= module/main/controller/controller.js
 
 /*Модуль Навигации*/
 //= module/navigation/config/config.js

@@ -3,7 +3,7 @@ main.config(['$routeProvider', function($routeProvide){
     $routeProvide
         .when ('/',{
         templateUrl:'view/home.html',
-        //controller: 'homeCtrl'
+        //controller: 'mainCtrl'
     })
         .when ('/record',{
         templateUrl:'view/record.html',

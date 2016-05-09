@@ -33,7 +33,7 @@
 			    ng-hide="list.dragging && item.selected"
 					>
 
-				<span>{{item.dateTime |  date:'dd/MM/yyyy H:m'}} </span>
+				<span>{{item.dateTime |  date:'dd:MM:yyyy - H:m'}} </span>
 				<span>{{item.name}}</span>
 
 
@@ -51,5 +51,6 @@
 	</div>
 	<div class="clearfix"></div>
 
+	<pre>{{models |json}}</pre>
 
 </div>
