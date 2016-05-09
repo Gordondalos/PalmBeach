@@ -12,7 +12,7 @@ var main = angular.module('main', [
 
 main.config(function(calendarConfig) {
 
-    console.log(calendarConfig); //view all available config
+  //  console.log(calendarConfig); //view all available config
 
    // calendarConfig.templates.calendarMonthView = 'path/to/custom/template.html'; //change the month view template to a custom template
     calendarConfig.templates.calendarMonthView = 'view/calendarMonthView.html'; //change the month view template to a custom template
