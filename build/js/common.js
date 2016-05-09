@@ -58,8 +58,12 @@ main.config(['$routeProvider', function($routeProvide){
 }]);
 /*Главный контроллер*/
 main.controller('mainCtrl', ['$scope', function ($scope){
-    $scope.calendarView = 'month';
-    $scope.calendarDate = new Date();
+    //$scope.calendarView = 'month';
+    //$scope.calendarDate = new Date();
+    $scope.vm.calendarTitle="Мой заголовок";
+    $scope.vm.viewDate= new Date();
+    $scope.vm.calendarView= 'month';
+
 
     $scope.events = [
         {
