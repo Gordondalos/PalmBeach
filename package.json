@@ -10,8 +10,10 @@
   "license": "MIT",
   "devDependencies": {
     "angular-bootstrap-datetimepicker": "^1.0.1",
+    "bootstrap": "^4.0.0-alpha.2",
     "gulp": "^3.9.1",
     "gulp-rigger": "^0.5.8",
-    "gulp-watch": "^4.3.5"
+    "gulp-watch": "^4.3.5",
+    "interact.js": "^1.2.6"
   }
 }

@@ -7,9 +7,8 @@ var main = angular.module('main', [
     'record',
     'dndLists',
     'ui.bootstrap.datetimepicker',
-    'mwl.calendar'
-
-
+    'mwl.calendar',
+    'ui.bootstrap'
 ]);
 
 main.config(function(calendarConfig) {
